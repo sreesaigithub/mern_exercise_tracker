@@ -1,13 +1,4 @@
 import "./sidebar.scss";
-// import DashboardIcon from "@mui/icons-material/Dashboard";
-// import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
-// import CreditCardIcon from "@mui/icons-material/CreditCard";
-// import SatelliteIcon from '@mui/icons-material/Satellite';
-// import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
-// import StoreIcon from "@mui/icons-material/Store";
-// import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-// import CurrencyExchangeIcon from '@mui/icons-material/CurrencyExchange';
-// import UpdateIcon from '@mui/icons-material/Update';
 import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
 import Select from "react-dropdown-select";
