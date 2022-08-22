@@ -1,26 +1,33 @@
-import React from 'react';
-import {BrowserRouter as Router, Route } from 'react-router-dom';
-import "bootstrap/dist/css/bootstrap.min.css";
-
-import Navbar from "./components/navbar.component";
-import ExercisesList from "./components/exercises-list.component";
-import EditExercise from "./components/edit-exercise.component";
-import CreateExercise from "./components/create-exercise.component";
-import CreateUser from "./components/create-user.component";
+import Home from "./pages/home/Home";
+import Login from "./pages/login/Login";
+import List from "./pages/list/List";
+import Single from "./pages/single/Single";
+// import New from "./pages/new/New";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { productInputs, userInputs } from "./formSource";
 
 
 function App() {
+
   return (
-    <Router>
-      <div className="container">
-      <Navbar/>
-      <br/>
-      <Route path="/" exact component={ExercisesList} />
-      <Route path="/edit/:id" component={EditExercise} />
-      <Route path="/create" component={CreateExercise} />
-      <Route path="/user" component={CreateUser} />
-      </div>
-    </Router>
+    <div className="app">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/">
+            <Route index element={<Home />} />
+            <Route path="login" element={<Login />} />
+            <Route path="users">
+              <Route index element={<List />} />
+              <Route path=":userId" element={<Single />} />
+              {/* <Route
+                path="new"
+                element={<New inputs={userInputs} title="Add New User" />}
+              /> */}
+            </Route>
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
