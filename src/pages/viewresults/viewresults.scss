@@ -1,6 +1,6 @@
 .single {
     display: flex;
-    width: 100%;
+    // width: 100%;
     .singleContainer {
       flex: 6;
   
@@ -8,18 +8,32 @@
         padding: 20px;
         display: flex;
         gap: 20px;
-  
-        .left {
-          flex: 1;
-          margin: 20px;
-        }
-  
-        .right {
-          flex: 2;
-          margin: 20px;
+        
+        .tops{
+          padding:20px;
+          display: flex;
+          gap: 20px;
+
+          .left {
+            flex: 2;
+            margin: 10px;
+          }
+          .right {
+            flex: 2;
+            margin: 10px;
+          }
         }
       }
-  
+      .viewdetails {
+        width: 600px;
+        padding: 20px;
+        display: flex;
+        // color: blue;
+        // align-self: flex-end;
+        // justify-content: end;
+        gap: 20px;
+      }
+
       .bottom{
         display: flex;
         align-items: center;

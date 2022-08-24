@@ -97,8 +97,14 @@ const Sidebar = () => {
           <span className="logo">Elevance Health</span>
         </Link>
       </div>
-      <hr />
+      {/* <hr /> */}
       <div className="center">
+        <div className="centerbluebar">
+
+        </div>
+        <div className="heading">
+          <p >Model Diagnostics</p>
+        </div>
         <ul>
           <p className="title">FILTER POPULATION</p>
             <li>

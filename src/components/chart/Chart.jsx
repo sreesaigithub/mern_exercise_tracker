@@ -1,4 +1,5 @@
 import "./chart.scss";
+
 import {
   AreaChart,
   Area,
@@ -46,6 +47,7 @@ const Chart = ({ aspect, title }) => {
           />
         </AreaChart>
       </ResponsiveContainer>
+
     </div>
   );
 };

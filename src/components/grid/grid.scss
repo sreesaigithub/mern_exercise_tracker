@@ -1,3 +1,36 @@
-.fff{
-    display:flex;
+.grids{
+    height: 300px;
+
+.gridsWrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 250px;
+    width: 600px;
+    margin:50px;
+
+    .block {
+        width: 300px;
+        flex: 0 0 50px;
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        // justify-content: left;
+        background-color: rgb(231, 243, 245);
+        border-radius: 5px;
+        span{
+            display: flex;
+            
+        }
+        .subblock{
+            padding:10px;
+            float: left;
+        }
+        .subicon{
+            float: right;
+            color:green;
+        }
+      }
+  }
+  
 }

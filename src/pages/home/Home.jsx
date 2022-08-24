@@ -2,7 +2,7 @@ import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
 import "./home.scss";
 import Widget from "../../components/widget/Widget";
-import Table from "../../components/table/Table";
+import Jobstatustable from "../../components/table/Jobstatustable";
 
 const Home = () => {
   return (
@@ -21,11 +21,11 @@ const Home = () => {
         </div>
         <div className="listContainer">
           <div className="listTitle">IN PROGRESS(0)</div>
-          <Table />
+          <Jobstatustable />
         </div>
         <div className="listContainer">
           <div className="listTitle">COMPLETED(5)</div>
-          <Table />
+          <Jobstatustable />
         </div>
       </div>
     </div>
