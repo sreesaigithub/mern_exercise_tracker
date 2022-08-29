@@ -3,6 +3,7 @@ import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
 import Chart from "../../components/chart/Chart";
 import Grids from "../../components/grid/Grids";
+import Population from "../../components/table/Population";
 import Paralleltrendtable from "../../components/table/Paralleltrendtable";
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
@@ -78,7 +79,7 @@ const Single = () => {
                 {/* </div>  */}
             </TabPanel>
             <TabPanel value="2"><Grids/></TabPanel>
-            <TabPanel value="3">Item Three</TabPanel>
+            <TabPanel value="3"><Population/></TabPanel>
           </TabContext>
         </Box>
          

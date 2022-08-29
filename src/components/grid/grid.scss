@@ -15,18 +15,19 @@
         margin: 5px;
         display: flex;
         align-items: center;
-        // justify-content: left;
+        
         background-color: rgb(231, 243, 245);
         border-radius: 5px;
         span{
             display: flex;
-            
+            justify-content: flex-end;
         }
         .subblock{
             padding:10px;
             float: left;
         }
         .subicon{
+            
             float: right;
             color:green;
         }
